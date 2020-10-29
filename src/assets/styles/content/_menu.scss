@@ -1,10 +1,10 @@
 .menu {
   position: fixed;
+  top: 0;
+  z-index: 9999;
   display: none;
   width: 100%;
   height: 100%;
-  top: 0;
-  z-index: 9999;
 }
 
 .visible {
@@ -17,46 +17,48 @@
 
 .boto-menu {
   position: fixed;
-  right: 5%;
   top: 50px;
+  right: 5%;
+  z-index: 1000;
   padding: 10px;
 }
 
 .boto-primari {
-  cursor: pointer;
-  border: 0;
   color: $color-quart;
-  background: $color-secondari;
+  cursor: pointer;
+  background-color: $color-secondari;
+
+  border: 0;
 
   &:hover {
     color: $color-secondari;
-    background: $color-quart;
+    background-color: $color-quart;
   }
 }
 
 .menu-links {
-  width: 100%;
-  top: 40%;
   position: absolute;
+  top: 40%;
+  width: 100%;
   height: 280px;
   margin-top: -140px;
   text-align: center;
 }
 
 .menu .icones-social {
-  width: 100%;
-  bottom: 4%;
   position: absolute;
+  bottom: 4%;
+  width: 100%;
   text-align: center;
 }
 
 .link-menu {
-  color: darken($color-primari, 10%);
-  border: 0;
   font-size: 35px;
-  line-height: 70px;
   font-weight: 700;
+  line-height: 70px;
+  color: darken($color-primari, 10%);
   text-transform: uppercase;
+  border: 0;
 
   &:hover {
     color: $color-quart;
