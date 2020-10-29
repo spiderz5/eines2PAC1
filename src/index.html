@@ -15,17 +15,13 @@ rel="stylesheet"
 href="../node_modules/@fortawesome/fontawesome-free/css/brands.min.css"
 />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;900&family=Roboto+Slab:wght@500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
     <title>CV Josep Serra</title>
   </head>
   <body class="estil-general">
     <header class="bloc-hf fons-primari">
-      <div class="contenidor">
-        <h1 class="titol titol-pag">JOSEP SERRA <span class="subtitol-pag"> Web | Video | Multimedia</span></h1>
-        <button class="boto-menu boto-primari "> <span class="fa fa-bars"></span> </button>
-      </div>
-      <div class="menu fons-fosc">
-        <button class="boto-menu boto-primari"> <span class="fa fa-close"></span> </button>
+      <div class="menu fons-fosc" id="menu">
+        <button class="boto-menu boto-primari" id="tancar"> <span class="fa fa-times-circle"></span> </button>
         <ul class="menu-links">
           <li><a class="link-menu" href="#sobremi">Sobre mi</a></li>
           <li><a class="link-menu" href="#projectes">Projectes</a></li>
@@ -41,6 +37,10 @@ href="../node_modules/@fortawesome/fontawesome-free/css/brands.min.css"
             <li class="icona"><a href="#"><span class="fab fa-linkedin"></span></a></li>
           </ul>
         </div>
+      </div>
+      <div class="contenidor">
+        <h1 class="titol titol-pag">JOSEP SERRA <span class="subtitol-pag"> Web | Video | Multimedia</span></h1>
+        <button class="boto-menu boto-primari"  id="obrir"> <span class="fa fa-bars"></span> </button>
       </div>
     </header>
     <main>
@@ -322,12 +322,6 @@ href="../node_modules/@fortawesome/fontawesome-free/css/brands.min.css"
         </div>
       </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> 
-    <script>
-      $('.link-menu, .boto-menu').on('click', function() {
-        $( ".menu" ).fadeToggle( "slow", "linear" );    
-      });
-    </script>
-    <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    <script src="./assets/scripts/main.js"></script>
   </body>
 </html>
